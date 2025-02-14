@@ -1,3 +1,9 @@
+:root {
+  --first-color: #d3f1df;
+  --second-color: #85a98f;
+  --third-color: #5a6c57;
+  --forth-color: #525b44;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +11,11 @@
 }
 
 body {
-  background-color: rgb(244, 249, 254);
+  background-color: var(--forth-color);
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -36,36 +46,54 @@ p {
 /*  Nav-bar */
 
 .nav-bar {
-  list-style: none;
-  gap: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  height: 35px;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  /* border: 1px solid rgb(226, 221, 221); */
+  border: none;
+  background-color: #839566;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-.nav-bar li {
-  background-color: rgb(7, 0, 0);
-  color: white;
+.active {
+  color: #010e05;
+}
+
+.MainHeading button {
+  width: 282px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 47px;
   border-radius: 20px;
-  padding: 3px;
+  margin-right: 55px;
+  border: none;
+  color: whitesmoke;
+  margin-left: 15px;
+  background-color: black;
+}
+
+.Home-button button {
+  width: 432px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 47px;
+  border-radius: 20px;
+  margin-right: 57px;
+  border: none;
+  color: whitesmoke;
+  background-color: black;
+}
+.nav-link {
+  font-size: 1.1rem;
+  padding: 10px;
+  font-weight: 700;
+  color: rgb(252, 231, 231);
+  text-decoration: none;
   transition: 0.2s ease-in-out;
 }
-.nav-bar li:hover {
-  background-color: rgb(162, 142, 142);
-}
-
-/*  2nd Image homeimg  */
-.Home {
-  height: 300px;
-  margin-top: 5px;
-}
-
-.Home img {
-  height: 100%;
-  width: 100%;
+.nav-link:hover {
+  color: rgb(210, 199, 199);
 }
 
 /*  ExampleSection  */
@@ -153,26 +181,58 @@ p {
 .Graph-Heading {
   text-align: center;
   justify-content: space-evenly;
-  border: 1px solid black;
-  height: 15%;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid rgb(219, 207, 207);
 }
 
+.Graph-Heading h1 {
+  font-size: 1.9rem;
+  color: #ceddb6;
+}
+
+.search-input {
+  justify-content: center;
+  margin-top: 5px;
+}
 .search-country {
   justify-content: center;
   align-items: center;
+  width: 50%;
+  align-items: center;
+}
+
+.Search-content {
+  font-size: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  color: #ceddb6;
 }
 
 .search-country button {
   padding: 10px;
-  margin-left: 5px;
+  margin-left: 20px;
+  margin-top: 4px;
+  background-color: #dbe7c9;
+  font-size: 1rem;
+  border: none;
   width: 150px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.2 ease-in-out;
+}
+
+.search-country button:hover {
+  background-color: #a7b394;
 }
 
 .search-country input {
   padding: 10px;
   font-size: 1rem;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 400px;
   border-radius: 10px;
@@ -180,12 +240,119 @@ p {
 
 .Main-of-all {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .heading-data {
   text-align: center;
   font-size: 1.5rem;
+  color: #ceddb6;
+}
+
+/* earth style */
+
+.earth-container {
+  text-align: center;
+  margin: 20px;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.info-box {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/*  demographic */
+
+.demographic {
+  padding: 5px;
+}
+
+/*-----MainHeading----------*/
+
+.MainHeading input {
+  width: 528px;
+  margin-top: 135px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border-color: #f1fedd;
+  text-align: justify;
+  background-color: white;
+}
+
+.MainHeading button {
+  width: 282px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 47px;
+  border-radius: 20px;
+  margin-right: 55px;
+  border: none;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+.MainHeading button:hover {
+  color: rgb(205, 193, 193);
+}
+
+/*---home-------*/
+
+.error {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(/src/img/kurt-cotoaga-cV73uDwuti0-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 35s infinite ease-in-out;
+  opacity: 0.5;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: rgb(252, 250, 250);
+  margin-top: 20px;
+}
+
+.Home-button button {
+  width: 432px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 47px;
+  border-radius: 20px;
+  margin-right: 57px;
+  border: none;
+  color: whitesmoke;
+}
+
+.Home-button button:hover {
+  background-color: #010e05;
+  color: rgb(205, 193, 193);
+}
+
+@keyframes change {
+  0% {
+    background-image: url(/src/img/kurt-cotoaga-cV73uDwuti0-unsplash.jpg);
+  }
+  60% {
+    background-image: url(/src/img/mathias-arlund-IxHWw400o-g-unsplash.jpg);
+  }
+  100% {
+    background-image: url(/src/img/athanasios-papazacharias-NUpqzTtPqcY-unsplash.jpg);
+  }
 }

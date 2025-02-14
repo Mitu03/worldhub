@@ -1,0 +1,310 @@
+.infrastructure--- {
+  display: flex;
+  flex-direction: row;
+}
+
+.infrastructure-1 {
+  font-size: 1rem;
+  width: 60%;
+}
+
+.infrastructure-1 h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: rgb(10, 9, 9);
+}
+
+.infrastructure-1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.infrastructure-2 {
+  width: 40%;
+}
+
+.infrastructure-1 strong {
+  font-size: 1.2rem;
+}
+
+/*--components----*/
+
+.components h1 {
+  font-size: 2rem;
+}
+
+.components-p {
+  font-size: 1.3rem;
+}
+
+.components-div h2 {
+  font-size: 1.6rem;
+}
+
+.components-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.components-div div {
+  border: 1px solid black;
+}
+
+/*----major-projects---*/
+
+.MajorTransport--- {
+  margin-top: 10px;
+}
+
+.major-projects {
+  border: 2px solid black;
+}
+
+.major-projects h1 {
+  font-size: 2rem;
+  color: aqua;
+  margin-top: 30px;
+}
+
+.major-projects-- {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.Major-Transport {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.Major-Transport div {
+  border: 1px solid black;
+  margin-top: 30px;
+  border: none;
+  margin: 20px 15px;
+  height: 300px;
+}
+
+.Major-Transport div img {
+  height: 300px;
+  width: 353px;
+  border-radius: 15px;
+  color: black;
+}
+
+/*-----MajorCities-----*/
+
+.MajorCities img {
+  height: 300px;
+  width: 350px;
+  border-radius: 10px;
+  margin-left: 19px;
+}
+
+.MajorCities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.Heading3 {
+  margin-top: 5px;
+}
+
+/*-----Ranking-------*/
+
+.Ranking {
+  margin-top: 60px;
+}
+
+.RankHeading {
+  margin-top: 20px;
+}
+
+.RankHeading h1 {
+  font-size: 2rem;
+  color: #1f1313;
+  margin-left: 15px;
+}
+.RankHeading p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+.Rankingsubbody {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.urban--- {
+  display: flex;
+}
+
+.urban--first {
+  width: 50%;
+}
+
+.urban--first h1 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.urban--second {
+  width: 50%;
+  height: 50%;
+}
+
+.urban--second img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.Digital--- {
+  display: flex;
+}
+
+.Digital--first {
+  width: 50%;
+}
+
+.Digital--first h1 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.Digital--second {
+  width: 50%;
+}
+
+.Digital--second img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.Energy--- {
+  display: flex;
+}
+
+.Energy-first {
+  width: 50%;
+}
+
+.Energy-first h2 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.Energy-first strong {
+  font-size: 19px;
+  margin-left: 17px;
+}
+
+.Energy-first li {
+  margin-left: 18px;
+  margin-top: 12px;
+}
+
+.Energy-second {
+  width: 50%;
+}
+
+.Energy-second img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.transport--- {
+  display: flex;
+  gap: 5px;
+}
+
+.transport---1 {
+  width: 50%;
+}
+
+.transport---2 {
+  width: 50%;
+}
+
+.transport---2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.Transpport--h2 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+.section strong {
+  font-size: 19px;
+  margin-left: 17px;
+}
+
+.section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section ul li {
+  margin-left: 18px;
+  margin-top: 12px;
+}
+
+.ranking-infrastructure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 15px;
+}
+
+.ranking-infrastructure > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Infrastructure-type {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.Infrastructure-type div {
+  margin: 0 20px;
+}
+
+.Infrastructure-type > div > strong {
+  font-size: 17px;
+}
+
+.Infrastructure-type > div > p {
+  font-size: 17px;
+  line-height: 1.5rem;
+  margin-bottom: 14px;
+  margin-left: 15px;
+}
+
+.Infrastructure-type > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Type-Infrastructure {
+  margin-top: 60px;
+}
