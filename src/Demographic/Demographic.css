@@ -14,7 +14,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  margin: 8px 5px;
+  margin: 0px 5px;
 }
 
 .Demographic-search {
@@ -84,7 +84,7 @@
 }
 
 .demo-footer {
-  background-color: var(--second-color);
+  background-color: #1f2220;
   padding: 20px;
 }
 
@@ -118,7 +118,7 @@
 .demo-footer strong {
   font-size: 1.1rem;
   padding: 15px;
-  color: #041c0e;
+  color: #9fbcab;
 }
 
 .demo-footer ul li {
