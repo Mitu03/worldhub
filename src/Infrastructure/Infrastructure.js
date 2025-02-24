@@ -5,7 +5,7 @@ import Heading3 from "./Heading3";
 import Ranking from "./Ranking";
 function Infrastructure() {
   return (
-    <div>
+    <div className="Infrastructure--Main--body">
       <HeadingInfra />
       <Heading2 />
       <Heading3 />

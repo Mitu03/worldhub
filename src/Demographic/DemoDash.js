@@ -48,75 +48,78 @@ function DemoDash() {
   };
 
   return (
-    <div className="demo-body">
-      <div>
+    <div className="demographic--">
+      <div className="demographic--1">
         <DemoSearch onCountry={handleDetail} />
       </div>
+      <div className="AllDemoGraph">
+        <div className="demographic--2">
+          <div className="demographic--child1">
+            <DataofAll
+              population={countryPopulation}
+              Growth={growthRate}
+              life={lifeExpectancy}
+              literacy={literacyRate}
+            />
+          </div>
 
-      <div className="Demo-data">
-        <div>
-          <DataofAll
-            population={countryPopulation}
-            Growth={growthRate}
-            life={lifeExpectancy}
-            literacy={literacyRate}
-          />
-        </div>
+          <div className="Chart-container-- demographic--child2">
+            <h3 className="demographic--child2--head">
+              Population Growth Rate
+            </h3>
+            <ResponsiveContainer className="barchart">
+              <BarChart width={400} height={300} data={growthRate}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" tick={{ fill: "#000000" }} />
+                <YAxis tick={{ fill: "#000000" }} />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="value" fill="#82ca9d" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
 
-        <div className="Chart-container--">
-          <h3>Population Growth Rate</h3>
-          <ResponsiveContainer>
-            <BarChart width={400} height={300} data={growthRate}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="date" tick={{ fill: "#FFFFFF" }} />
-              <YAxis tick={{ fill: "#FFFFFF" }} />
-              <Tooltip />
-              <Legend />
-              <Bar dataKey="value" fill="#82ca9d" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+          <div className="Chart-container-- demographic--child3">
+            <h3 className="demographic--child2--head">Population Data</h3>
+            <ResponsiveContainer>
+              <LineChart width={400} height={300} data={countryPopulation}>
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="date" tick={{ fill: "#000000" }} />
+                <YAxis tick={{ fill: "#000000" }} />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="value" stroke="#8884d8" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
 
-        <div className="Chart-container--">
-          <h3>Population Data</h3>
-          <ResponsiveContainer>
-            <LineChart width={400} height={300} data={countryPopulation}>
-              <CartesianGrid stroke="#ccc" />
-              <XAxis dataKey="date" tick={{ fill: "#FFFFFF" }} />
-              <YAxis tick={{ fill: "#FFFFFF" }} />
-              <Tooltip />
-              <Legend />
-              <Line type="monotone" dataKey="value" stroke="#8884d8" />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
+          <div className="Chart-container-- demographic--child4">
+            <h3 className="demographic--child2--head">Life Expectancy</h3>
+            <ResponsiveContainer>
+              <LineChart width={400} height={300} data={lifeExpectancy}>
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="date" tick={{ fill: "#000000" }} />
+                <YAxis tick={{ fill: "#000000" }} />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="value" stroke="#ff7300" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
 
-        <div className="Chart-container--">
-          <h3>Life Expectancy</h3>
-          <ResponsiveContainer>
-            <LineChart width={400} height={300} data={lifeExpectancy}>
-              <CartesianGrid stroke="#ccc" />
-              <XAxis dataKey="date" tick={{ fill: "#FFFFFF" }} />
-              <YAxis tick={{ fill: "#FFFFFF" }} />
-              <Tooltip />
-              <Legend />
-              <Line type="monotone" dataKey="value" stroke="#ff7300" />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="Chart-container--">
-          <h3>Literacy Rate</h3>
-          <ResponsiveContainer>
-            <LineChart width={400} height={300} data={literacyRate}>
-              <CartesianGrid stroke="#ccc" />
-              <XAxis dataKey="date" tick={{ fill: "#FFFFFF" }} />
-              <YAxis tick={{ fill: "#FFFFFF" }} />
-              <Tooltip />
-              <Legend />
-              <Line type="monotone" dataKey="value" stroke="#ff0000" />
-            </LineChart>
-          </ResponsiveContainer>
+          <div className="Chart-container-- demographic--child5">
+            <h3 className="demographic--child2--head">Literacy Rate</h3>
+            <ResponsiveContainer>
+              <LineChart width={400} height={300} data={literacyRate}>
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="date" tick={{ fill: "#000000" }} />
+                <YAxis tick={{ fill: "#000000" }} />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="value" stroke="#ff0000" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
     </div>

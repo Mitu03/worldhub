@@ -6,10 +6,9 @@ function AppLayout() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
   return (
-    <div className="container">
+    <div>
       {isLoading && <Loading />}
       <Heading />
-      
 
       <div className="container">
         <main className="main-content">

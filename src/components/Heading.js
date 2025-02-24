@@ -27,70 +27,47 @@
 
 // export default Heading;
 
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { VscMenu } from "react-icons/vsc";
 
 function Heading() {
-  const location = useLocation(); // Get the current URL path
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const [isOPEN, setisOpen] = useState(false);
 
-  useEffect(() => {
-    setActiveLink(location.pathname); // Update active link when the route changes
-  }, [location]);
+  function bar() {
+    setisOpen((isOPEN) => !isOPEN);
+  }
+
+  function Linkpress() {
+    setisOpen(false);
+  }
 
   return (
-    <div className="container">
-      <ul className="nav-bar flex">
-        <li>
-          <Link
-            className={`nav-link ${activeLink === "/" ? "active" : ""}`}
-            to="/"
-          >
+    <div className="nav-menu">
+      {isOPEN && (
+        <button onClick={Linkpress} className="nav-menu-ul">
+          <Link className="nav-link" to="/">
             Home
           </Link>
-        </li>
-        <li>
-          <Link
-            className={`nav-link ${
-              activeLink === "/economic-Indicator" ? "active" : ""
-            }`}
-            to="/economic-Indicator"
-          >
-            Economic Indicators
+          <Link className="nav-link" to="/economic-Indicator">
+            Economic
           </Link>
-        </li>
-        <li>
-          <Link
-            className={`nav-link ${
-              activeLink === "/demographic-data" ? "active" : ""
-            }`}
-            to="/demographic-data"
-          >
-            Demographic Data
+          <Link className="nav-link" to="/demographic-data">
+            Demographic
           </Link>
-        </li>
-        <li>
-          <Link
-            className={`nav-link ${
-              activeLink === "/trade&globalization" ? "active" : ""
-            }`}
-            to="/trade&globalization"
-          >
+
+          <Link className="nav-link" to="/trade&globalization">
             Trade and Globalization
           </Link>
-        </li>
-        <li>
-          <Link
-            className={`nav-link ${
-              activeLink === "/infrastructure" ? "active" : ""
-            }`}
-            to="/infrastructure"
-          >
+
+          <Link className="nav-link" to="/infrastructure">
             Infrastructure Data
           </Link>
-        </li>
-      </ul>
-
+        </button>
+      )}
+      <button onClick={bar} className="menu-button">
+        <VscMenu />
+      </button>
     </div>
   );
 }

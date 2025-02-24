@@ -30,10 +30,10 @@ function SearchBar({ onCountry }) {
     }
   }
   return (
-    <div className="search-country flex">
-      <div className="Search-content flex">{Searched}</div>
-      <div className="search-input flex">
-        <div>
+    <div className="economic--searchBar">
+      <div className="economic--searchBar--name">{Searched}</div>
+      <div className="economic--searchBar-input">
+        <div className="economic--searchBar--input">
           {" "}
           <input
             type="text"
@@ -42,7 +42,7 @@ function SearchBar({ onCountry }) {
             onChange={(e) => setInputValue(e.target.value)}
           />
         </div>
-        <div>
+        <div className="economic--searchBar--button">
           <button onClick={handleBoth}>Search</button>
         </div>
       </div>

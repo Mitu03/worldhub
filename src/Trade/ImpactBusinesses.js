@@ -1,8 +1,8 @@
 function ImpactBusinesses() {
   return (
-    <div class="global-trade-section Business---">
-      <div className="Impact-Business-1">
-        <h1 className="Impact-business-head">Impact on Businesses</h1>
+    <div class="Trade--Impact">
+      <div className="Trade--Impact--1">
+        <h1 className="Trade--Impact--1--heading">Impact on Businesses</h1>
         <p>
           Global trade presents businesses with opportunities to expand into new
           markets, increase revenue, and gain access to global talent and
@@ -15,7 +15,7 @@ function ImpactBusinesses() {
           Multinational corporations like Apple and Toyota rely heavily on
           international trade for their supply chains and global sales.
         </p>
-        <ul>
+        <ul className="Trade--Impact--1-ul">
           <li>
             <strong>Global Market Access:</strong> Businesses can expand
             internationally, reaching customers around the world.
@@ -32,12 +32,13 @@ function ImpactBusinesses() {
         </ul>
       </div>
 
-      <div className="Impact-Business-2">
-        📈{" "}
-        <em>
-          Visual: Infographic showing a global supply chain network with key
-          nodes. Graph...important port
-        </em>
+      <div className="Trade--Impact--2">
+        <img
+          src="./Image/TradeRoute.jpg"
+          alt="impact"
+          height="200px"
+          width="100px"
+        />
       </div>
     </div>
   );

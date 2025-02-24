@@ -9,7 +9,7 @@ function MainHeading() {
   }, []);
 
   return (
-    <div className="MainHeading container">
+    <div className="Home---input">
       <input
         type="text"
         value={aiSearch}

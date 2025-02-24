@@ -33,10 +33,10 @@ function DemoSearch({ onCountry }) {
     }
   }
   return (
-    <div className="Demographic-search flex">
-      <div className="Demo-content">{displayName}</div>
-      <div className="input-btn flex">
-        <div>
+    <div className="demographic-search---">
+      <div className="demographic-search---name">{displayName}</div>
+      <div className="demographic-search---input ">
+        <div className="demographic-search--input--">
           {" "}
           <input
             type="text"
@@ -46,7 +46,7 @@ function DemoSearch({ onCountry }) {
           />
         </div>
 
-        <div>
+        <div className="demographic-search--button">
           {" "}
           <button onClick={buttoncall}>Search</button>
         </div>

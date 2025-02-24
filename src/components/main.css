@@ -1,0 +1,61 @@
+.nav-menu {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  width: 50%;
+}
+.menu-button {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  height: 5%;
+  width: 4%;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 10%;
+  border: none;
+}
+.nav-menu-ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 76%;
+  gap: 12px;
+  font-size: 1.3rem;
+  left: 83%;
+  transform: translateX(-50%);
+  background-color: rgb(232, 229, 225);
+  z-index: 10;
+  border: 1px solid black;
+  padding: 10px 0; /* Prevents items from touching the edges */
+}
+
+/* Styling for links */
+.nav-link {
+  text-decoration: none;
+  color: rgb(31, 29, 29);
+  text-align: center;
+  padding: 15px 20px;
+  position: relative; /* Needed for hover animation */
+  overflow: hidden;
+}
+
+/* Hover Effect - Border moves from right to left */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Start from right */
+  width: 0%;
+  height: 2px;
+  background-color: rgb(205, 205, 216); /* Change this color if needed */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expands to the left */
+  left: 0;
+  right: auto;
+}

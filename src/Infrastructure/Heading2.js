@@ -6,22 +6,27 @@ import Urban from "./Urban";
 
 function Heading2() {
   return (
-    <>
-      <h1>Global Infrastructure</h1>
-      <p className="components-p">
-        Global infrastructure is categorized into several key areas, each
-        playing a critical role in supporting economic activities and improving
-        living standards. Below are the primary components:
-      </p>
+    <div>
+      <div className="Infrastructure---MainContent">
+        <h1 className="Infrastructure---MainContent-heading">
+          Global Infrastructure
+        </h1>
+        <p className="Infrastructure---MainContent-paragraph">
+          Global infrastructure is categorized into several key areas, each
+          playing a critical role in supporting economic activities and
+          improving living standards. Below are the primary components:
+        </p>
+      </div>
+      <div>
+        <Transport />
 
-      <Transport />
+        <EnergyProject />
 
-      <EnergyProject />
+        <Digital />
 
-      <Digital />
-
-      <Urban />
-    </>
+        <Urban />
+      </div>
+    </div>
   );
 }
 

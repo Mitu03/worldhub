@@ -1,8 +1,7 @@
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
-import Error from "./components/Error";
 import Economic from "./Economic/Economic";
+import Errors from "./components/Errors";
 import Demographic from "./Demographic/Demographic";
 import Trade from "./Trade/Trade";
 import Infrastructure from "./Infrastructure/Infrastructure";
@@ -10,7 +9,7 @@ import Home from "./Utility/Main";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-    errorElement: <Error />,
+    errorElement: <Errors />,
 
     children: [
       {

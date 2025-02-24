@@ -1,8 +1,8 @@
 function EconomicImpactGT() {
   return (
-      <div class="global-trade-section Economic---">
-        <div className="Economic-impact-1">
-          <h1 className="Economic---head">Economic Impact of Global Trade</h1>
+      <div class="Trade--economic-1">
+        <div className="Trade--economic--main">
+          <h1 className="Trade--economic--main-heading">Economic Impact of Global Trade</h1>
           <p>
             The economic impact of global trade is profound, affecting GDP
             growth, employment, and technological advancement. Countries that
@@ -16,7 +16,7 @@ function EconomicImpactGT() {
             high-quality engineering products, while others focus on
             agricultural exports or tech services.
           </p>
-          <ul>
+          <ul className="Trade--economic--main-ul">
             <li>
               <strong>GDP Contribution:</strong> In many developing countries,
               exports contribute over 20% of the national GDP.
@@ -33,7 +33,7 @@ function EconomicImpactGT() {
             </li>
           </ul>
         </div>
-        <div className="Economic-impact-2">
+        <div className="Trade--economic--main-2">
           📊{" "}
           <em>
             Visual: Bar graph showing the contribution of exports to the GDP of

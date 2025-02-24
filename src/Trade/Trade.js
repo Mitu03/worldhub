@@ -5,7 +5,7 @@ import GlobalTrade from "./GlobalTrade";
 import ImpactBusinesses from "./ImpactBusinesses";
 function Trade() {
   return (
-    <div>
+    <div className="Trade--MainContent">
       <GlobalTrade />
       <ChallengesGlobal />
       <FutureofTrade />

@@ -2,7 +2,7 @@ import React from "react";
 
 function DataofAll({ population, growth, life, literacy }) {
   return (
-    <div className="DataofAll">
+    <div className="demographic--- 1child--parent">
       <ul>
         <li>
           <strong>Total Population:</strong>{" "}

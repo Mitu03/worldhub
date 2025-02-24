@@ -4,7 +4,7 @@ import Para from "./para";
 function Home() {
   return (
     <div>
-      <div className="home">
+      <div className="Home----">
         <MainHeading />
         <Para />
         <Button />

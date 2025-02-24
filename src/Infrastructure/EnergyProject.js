@@ -2,10 +2,10 @@ import energy1 from "./Image/energy1.avif";
 
 function EnergyProject() {
   return (
-    <div className="Energy---">
-      <div className="Energy-first">
-        <h2>Energy Projects</h2>
-        <ul>
+    <div className="Infrastructure--energy--main">
+      <div className="Infrastructure--energy--main--1">
+        <h2 className="Infrastructure--energy--main--1-head">Energy Projects</h2>
+        <ul className="Infrastructure--energy--main--1-head-ul">
           <strong>Three Gorges Dam (China):</strong>
           <li>The world's largest hydroelectric power station.</li>
           <li>
@@ -30,7 +30,7 @@ function EnergyProject() {
         </ul>
       </div>
 
-      <div className="Energy-second">
+      <div className="Infrastructure--energy--main--2">
         <img src={energy1} alt="energy" width="300px" height="200px" />
       </div>
     </div>

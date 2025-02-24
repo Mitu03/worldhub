@@ -17,7 +17,7 @@ function Para() {
     };
   }, []);
 
-  return <span className="typed-text" ref={textRef}></span>;
+  return <span className="Home---auto--text" ref={textRef}></span>;
 }
 
 export default Para;

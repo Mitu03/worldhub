@@ -1,6 +1,6 @@
 function Button() {
     return (
-        <div className="container Home-button">
+        <div className="Home---button">
             <button>Explore</button>
         </div>
     )

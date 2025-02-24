@@ -41,14 +41,15 @@ function DashBoard() {
     setReservesData(foreignReserves);
   };
   return (
-    <div className="container">
-      <div className="Graph-Heading flex">
-        <h1>Economic Indicators</h1>
+    <div className="economic----">
+      <div className="economic---searchBar">
+        <h1 className="economic---searchBar--heading">Economic Indicators</h1>
         <SearchBar onCountry={handleCountrySelect} />
       </div>
-      <div className="Main-of-all">
-        <div className="Chart-container">
-          <h2 className="heading-data">GDP Trend</h2>
+
+      <div className="economic---MainContent">
+        <div className="economic---MainContent--child1 Chart-container ">
+          <h2 className="economic---MainContent-head">GDP Trend</h2>
           <ResponsiveContainer>
             <LineChart width={350} height={300} data={gdpData}>
               <CartesianGrid stroke="#ccc" />
@@ -61,8 +62,8 @@ function DashBoard() {
           </ResponsiveContainer>
         </div>
 
-        <div className="Chart-container">
-          <h2 className="heading-data">Inflation Trend</h2>
+        <div className="Chart-container economic---MainContent--child2">
+          <h2 className="economic---MainContent-head">Inflation Trend</h2>
           <ResponsiveContainer>
             <BarChart width={350} height={300} data={inflatation}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -75,8 +76,8 @@ function DashBoard() {
           </ResponsiveContainer>
         </div>
 
-        <div className="Chart-container">
-          <h2 className="heading-data">Unemployment Rate</h2>
+        <div className="Chart-container  economic---MainContent--child3">
+          <h2 className="economic---MainContent-head">Unemployment Rate</h2>
           <ResponsiveContainer>
             <LineChart width={350} height={300} data={unemployment}>
               <CartesianGrid stroke="#ccc" />
@@ -89,8 +90,8 @@ function DashBoard() {
           </ResponsiveContainer>
         </div>
 
-        <div className="Chart-container">
-          <h2 className="heading-data">External Debt</h2>
+        <div className="Chart-container economic---MainContent--child4">
+          <h2 className="economic---MainContent-head">External Debt</h2>
           <ResponsiveContainer>
             <LineChart width={350} height={300} data={debtData}>
               <CartesianGrid stroke="#ccc" />
@@ -103,8 +104,8 @@ function DashBoard() {
           </ResponsiveContainer>
         </div>
 
-        <div className="Chart-container">
-          <h2 className="heading-data">Foreign Reserves</h2>
+        <div className="Chart-container economic---MainContent--child5">
+          <h2 className="economic---MainContent-head">Foreign Reserves</h2>
           <ResponsiveContainer>
             <LineChart width={350} height={300} data={reservesData}>
               <CartesianGrid stroke="#ccc" />
